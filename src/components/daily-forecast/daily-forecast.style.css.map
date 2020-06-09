@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "daily-forecast.style.scss"
+    ],
+    "names": [],
+    "file": "daily-forecast.style.css"
+}
