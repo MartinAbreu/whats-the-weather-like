@@ -1,0 +1,33 @@
+.daily-weather-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 55%;
+  padding-bottom: 40px;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+
+  .weather-icon {
+    font-size: 30vw;
+    padding-top: 20px;
+  }
+
+  .current-area {
+    font-size: 8vw;
+  }
+
+  .today {
+    font-size: 6vw;
+  }
+  .degrees {
+    font-size: 30vw;
+
+    &::after {
+      content: "\00b0";
+    }
+  }
+
+  .weather-description {
+    font-size: 9vw;
+  }
+}

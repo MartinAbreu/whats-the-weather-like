@@ -1,0 +1,24 @@
+.weather-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  width: 15%;
+  font-size: 4vw;
+  padding: 20px 5px;
+
+  .weather-icon {
+    padding: 3vw 0;
+  }
+
+  .temp {
+    &::after {
+      content: "\00b0";
+    }
+  }
+
+  h1 {
+    font-size: 5vw;
+    font-weight: 500;
+    margin: 0;
+  }
+}
