@@ -12,7 +12,7 @@ const Card = ({ reading }) => {
       <h1>{moment(newDate).format("ddd")}</h1>
       <i className={`owf owf-${reading.weather[0].id} weather-icon`}></i>
       <span className="temp">{Math.round(reading.temp.max)}</span>
-      <span>{reading.weather[0].main}</span>
+      <span className="weather-con">{reading.weather[0].main}</span>
     </div>
   );
 };

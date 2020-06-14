@@ -69,6 +69,9 @@ class DailyForecast extends Component {
         <span className="degrees">
           {String(Math.round(this.state.currentWeather.temp))}
         </span>
+        <span className="max-min">
+          H: {String(Math.round(this.state.currentWeather.temp_max))}
+        </span>
         <span className="weather-description">
           {this.state.weatherDescription}
         </span>

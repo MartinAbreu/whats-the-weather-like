@@ -44,7 +44,13 @@ class WeeklyForecast extends Component {
       <div className="card-list-wrap">
         <span className="forecast-title">5 Day Forecast</span>
         <div className="weather-card-list">{this.makeDayCards()}</div>
-        <span className="author-title">Developed by Martin Abreu</span>
+        <span className="author-title">
+          Developed by{" "}
+          <a href="https://github.com/brolz" target="_blank">
+            {" "}
+            Martin Abreu
+          </a>
+        </span>
       </div>
     );
   }
