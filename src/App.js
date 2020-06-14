@@ -3,6 +3,7 @@ import ApiKeys from "./apiKeys";
 import "./App.css";
 import WeeklyForecast from "./components/weekly-forecast/weekly-forecast";
 import DailyForecast from "./components/daily-forecast/daily-forecast";
+import PWAPrompt from "react-ios-pwa-prompt";
 
 class App extends Component {
   constructor(props) {
@@ -76,7 +77,15 @@ class App extends Component {
   render() {
     return (
       <div className={`App title ${this.backgroundHandler()}`}>
-        <span>What's The Weather Like</span>
+        <PWAPrompt
+          promptOnVisit={1}
+          timesToShow={3}
+          copyClosePrompt="Close"
+          permanentlyHideOnDismiss={false}
+        />
+
+        <span className="app-name">What's The Weather Like</span>
+
         <DailyForecast
           apiKey={ApiKeys}
           timeOfDay={this.nightNDayHandler}

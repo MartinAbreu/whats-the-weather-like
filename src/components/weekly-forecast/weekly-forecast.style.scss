@@ -3,7 +3,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 30%;
+  height: 40%;
+  max-width: 1040px;
   background-color: rgba(97, 97, 97, 0.3);
   border-radius: 20px 20px 0 0;
   color: white;
@@ -22,5 +23,34 @@
 
   .author-title {
     font-size: 4vw;
+  }
+
+  @media (min-width: 725px) {
+    height: 40%;
+    .forecast-title {
+      font-size: 4vw;
+    }
+
+    .weather-card-list {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      width: 100%;
+      font-size: 2vw;
+    }
+
+    .author-title {
+      font-size: 4vw;
+    }
+  }
+
+  @media (min-width: 1040px) {
+    .forecast-title {
+      font-size: 40px;
+    }
+
+    .author-title {
+      font-size: 40px;
+    }
   }
 }

@@ -21,4 +21,12 @@
     font-weight: 500;
     margin: 0;
   }
+  @media (min-width: 1040px) {
+    font-size: 30px;
+    h1 {
+      font-size: 40px;
+      font-weight: 500;
+      margin: 0;
+    }
+  }
 }

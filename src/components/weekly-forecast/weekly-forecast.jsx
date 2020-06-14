@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import ApiKeys from "../../apiKeys";
 import Card from "../card/card.component";
 import "./weekly-forecast.style.scss";
 
@@ -21,7 +20,7 @@ class WeeklyForecast extends Component {
         const lon = position.coords.longitude;
 
         const weatherURL = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&
-        exclude=hourly,minutely&units=imperial&appid=${ApiKeys}`;
+        exclude=hourly,minutely&units=imperial&appid=${this.props.apiKey}`;
 
         fetch(weatherURL)
           .then((res) => res.json())

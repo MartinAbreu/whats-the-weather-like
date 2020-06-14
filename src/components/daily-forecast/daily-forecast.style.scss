@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: space-between;
   height: 55%;
+  max-width: 1040px;
   padding-bottom: 40px;
   color: rgb(255, 255, 255);
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
@@ -29,5 +30,68 @@
 
   .weather-description {
     font-size: 9vw;
+  }
+
+  $breakpoint-tablet: 650px;
+  @media (min-width: $breakpoint-tablet) {
+    .weather-icon {
+      font-size: 30vw;
+      padding-top: 20px;
+    }
+
+    .current-area {
+      font-size: 8vw;
+    }
+
+    .today {
+      font-size: 6vw;
+    }
+    .degrees {
+      font-size: 20vw;
+
+      &::after {
+        content: "\00b0";
+      }
+    }
+
+    .weather-description {
+      font-size: 9vw;
+    }
+  }
+
+  @media (min-width: 725px) {
+    .degrees {
+      font-size: 10vw;
+    }
+  }
+
+  @media (min-width: 1000px) {
+    height: 40%;
+    justify-content: center;
+    align-items: center;
+
+    .weather-icon {
+      font-size: 160px;
+      padding-top: 20px;
+    }
+
+    .current-area {
+      font-size: 60px;
+    }
+
+    .today {
+      font-size: 40px;
+    }
+    .degrees {
+      font-size: 100px;
+
+      &::after {
+        content: "\00b0";
+      }
+    }
+
+    .weather-description {
+      font-size: 60px;
+    }
   }
 }

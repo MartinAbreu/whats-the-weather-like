@@ -11,6 +11,7 @@
     "open-weather-icons": "0.0.8",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-ios-pwa-prompt": "^1.8.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
     "use-position": "0.0.7"
