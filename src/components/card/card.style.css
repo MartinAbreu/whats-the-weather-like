@@ -1,1 +1,39 @@
-/* No CSS *//*# sourceMappingURL=card.style.css.map */
+.weather-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 10px;
+  width: 15%;
+  font-size: 4vw;
+  padding: 20px 5px;
+}
+
+.weather-card .weather-icon {
+  padding: 3vw 0;
+}
+
+.weather-card .temp::after {
+  content: "\00b0";
+}
+
+.weather-card h1 {
+  font-size: 5vw;
+  font-weight: 500;
+  margin: 0;
+}
+
+@media (min-width: 1040px) {
+  .weather-card {
+    font-size: 30px;
+  }
+  .weather-card h1 {
+    font-size: 40px;
+    font-weight: 500;
+    margin: 0;
+  }
+}
+/*# sourceMappingURL=card.style.css.map */

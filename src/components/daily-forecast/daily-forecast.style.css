@@ -1,1 +1,116 @@
-/* No CSS *//*# sourceMappingURL=daily-forecast.style.css.map */
+.daily-weather-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 70%;
+  max-width: 1040px;
+  padding-bottom: 40px;
+  color: white;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+
+.daily-weather-wrap .weather-icon {
+  font-size: 30vw;
+  padding-top: 20px;
+}
+
+.daily-weather-wrap .current-area {
+  font-size: 8vw;
+}
+
+.daily-weather-wrap .today {
+  font-size: 6vw;
+}
+
+.daily-weather-wrap .degrees {
+  font-size: 30vw;
+}
+
+.daily-weather-wrap .degrees::after {
+  content: "\00b0";
+}
+
+.daily-weather-wrap .max-min {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-size: 20px;
+  padding-right: 20px;
+}
+
+.daily-weather-wrap .weather-description {
+  font-size: 9vw;
+}
+
+@media (min-width: 650px) {
+  .daily-weather-wrap .weather-icon {
+    font-size: 30vw;
+    padding-top: 20px;
+  }
+  .daily-weather-wrap .current-area {
+    font-size: 8vw;
+  }
+  .daily-weather-wrap .today {
+    font-size: 6vw;
+  }
+  .daily-weather-wrap .degrees {
+    font-size: 20vw;
+  }
+  .daily-weather-wrap .degrees::after {
+    content: "\00b0";
+  }
+  .daily-weather-wrap .weather-description {
+    font-size: 9vw;
+  }
+}
+
+@media (min-width: 725px) {
+  .daily-weather-wrap .degrees {
+    font-size: 10vw;
+  }
+  .daily-weather-wrap .max-min {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .daily-weather-wrap {
+    height: 40%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .daily-weather-wrap .weather-icon {
+    font-size: 160px;
+    padding-top: 20px;
+  }
+  .daily-weather-wrap .current-area {
+    font-size: 60px;
+  }
+  .daily-weather-wrap .today {
+    font-size: 40px;
+  }
+  .daily-weather-wrap .degrees {
+    font-size: 100px;
+  }
+  .daily-weather-wrap .degrees::after {
+    content: "\00b0";
+  }
+  .daily-weather-wrap .weather-description {
+    font-size: 60px;
+  }
+}
+/*# sourceMappingURL=daily-forecast.style.css.map */

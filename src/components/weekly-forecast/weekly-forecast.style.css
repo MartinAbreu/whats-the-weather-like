@@ -1,1 +1,79 @@
-/* No CSS *//*# sourceMappingURL=weekly-forecast.style.css.map */
+.card-list-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40%;
+  max-width: 1040px;
+  background-color: rgba(97, 97, 97, 0.3);
+  border-radius: 20px 20px 0 0;
+  color: white;
+  text-shadow: 2px 4px 3px rgba(230, 228, 228, 0.3);
+}
+
+.card-list-wrap .forecast-title {
+  font-size: 7vw;
+}
+
+.card-list-wrap .weather-card-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+}
+
+.card-list-wrap .author-title {
+  font-size: 4vw;
+}
+
+@media (min-width: 725px) {
+  .card-list-wrap {
+    height: 40%;
+  }
+  .card-list-wrap .forecast-title {
+    font-size: 4vw;
+  }
+  .card-list-wrap .weather-card-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: 100%;
+    font-size: 2vw;
+  }
+  .card-list-wrap .author-title {
+    font-size: 4vw;
+  }
+}
+
+@media (min-width: 1040px) {
+  .card-list-wrap .forecast-title {
+    font-size: 40px;
+  }
+  .card-list-wrap .author-title {
+    font-size: 40px;
+  }
+}
+/*# sourceMappingURL=weekly-forecast.style.css.map */
