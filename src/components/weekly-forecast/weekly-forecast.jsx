@@ -19,7 +19,7 @@ class WeeklyForecast extends Component {
         const lat = position.coords.latitude;
         const lon = position.coords.longitude;
 
-        const weatherURL = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&
+        const weatherURL = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&
         exclude=hourly,minutely&units=imperial&appid=${this.props.apiKey}`;
 
         fetch(weatherURL)
@@ -41,15 +41,15 @@ class WeeklyForecast extends Component {
 
   render() {
     return (
-      <div className="card-list-wrap">
-        <span className="forecast-title">5 Day Forecast</span>
-        <div className="weather-card-list">{this.makeDayCards()}</div>
-        <span className="author-title">
+      <div className='card-list-wrap'>
+        <span className='forecast-title'>5 Day Forecast</span>
+        <div className='weather-card-list'>{this.makeDayCards()}</div>
+        <span className='author-title'>
           Developed by{" "}
           <a
-            href="https://github.com/brolz"
-            target="_blank"
-            rel="noopener noreferrer"
+            href='https://github.com/brolz'
+            target='_blank'
+            rel='noopener noreferrer'
           >
             {" "}
             Martin Abreu
