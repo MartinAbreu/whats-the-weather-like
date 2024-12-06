@@ -20,12 +20,12 @@ class WeeklyForecast extends Component {
         const lon = position.coords.longitude;
 
         const weatherURL = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&
-        exclude=hourly,minutely&units=imperial&appid=${this.props.apiKey}`;
+        exclude=hourly,minutely&units=imperial&cnt=5&appid=${this.props.apiKey}`;
 
         fetch(weatherURL)
           .then((res) => res.json())
           .then((data) => {
-            const fiveDayData = data.daily.slice(1, 6);
+            const fiveDayData = data.list;
             this.setState({ dailyData: fiveDayData });
           });
       });
@@ -42,19 +42,8 @@ class WeeklyForecast extends Component {
   render() {
     return (
       <div className='card-list-wrap'>
-        <span className='forecast-title'>5 Day Forecast</span>
+        <span className='forecast-title'>A Look Ahead...</span>
         <div className='weather-card-list'>{this.makeDayCards()}</div>
-        <span className='author-title'>
-          Developed by{" "}
-          <a
-            href='https://github.com/brolz'
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            {" "}
-            Martin Abreu
-          </a>
-        </span>
       </div>
     );
   }

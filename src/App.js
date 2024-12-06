@@ -80,11 +80,11 @@ class App extends Component {
         <PWAPrompt
           promptOnVisit={1}
           timesToShow={3}
-          copyClosePrompt="Close"
+          copyClosePrompt='Close'
           permanentlyHideOnDismiss={false}
         />
 
-        <span className="app-name">What's The Weather Like</span>
+        <span className='app-name'>What's The Weather Like</span>
 
         <DailyForecast
           apiKey={ApiKeys}
@@ -92,6 +92,17 @@ class App extends Component {
           condition={this.conditionHandler}
         />
         <WeeklyForecast apiKey={ApiKeys} />
+        <h3 className='author-title'>
+          Developed by{" "}
+          <a
+            href='https://github.com/MartinAbreu'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            {" "}
+            Martin Abreu
+          </a>
+        </h3>
       </div>
     );
   }

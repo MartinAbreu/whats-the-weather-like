@@ -8,11 +8,12 @@ const Card = ({ reading }) => {
   newDate.setTime(weekday);
 
   return (
-    <div className="weather-card">
+    <div className='weather-card'>
       <h1>{moment(newDate).format("ddd")}</h1>
+      <span className='time'>{moment(newDate).format("LT")}</span>
       <i className={`owf owf-${reading.weather[0].id} weather-icon`}></i>
-      <span className="temp">{Math.round(reading.temp.max)}</span>
-      <span className="weather-con">{reading.weather[0].main}</span>
+      <span className='temp'>{Math.round(reading.main.temp)}</span>
+      <span className='weather-con'>{reading.weather[0].main}</span>
     </div>
   );
 };

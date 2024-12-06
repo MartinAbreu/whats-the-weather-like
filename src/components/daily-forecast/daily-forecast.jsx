@@ -59,23 +59,23 @@ class DailyForecast extends Component {
     newDate.setTime(weekday);
 
     return (
-      <div className="daily-weather-wrap">
-        <span className="today">
+      <div className='daily-weather-wrap'>
+        <span className='today'>
           {moment(newDate).format("dddd, MMMM Do YYYY")}
         </span>
         <i
           className={`owf owf-${this.state.weatherId} owf-5x weather-icon`}
         ></i>
-        <span className="degrees">
+        <span className='degrees'>
           {String(Math.round(this.state.currentWeather.temp))}
         </span>
-        <span className="max-min">
+        <span className='max-min'>
           H: {String(Math.round(this.state.currentWeather.temp_max))}
         </span>
-        <span className="weather-description">
+        <span className='weather-description'>
           {this.state.weatherDescription}
         </span>
-        <h1 className="current-area">{this.state.allTodaysData.name}</h1>
+        <h1 className='current-area'>{this.state.allTodaysData.name}</h1>
       </div>
     );
   }
